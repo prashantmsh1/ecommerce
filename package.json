@@ -1,0 +1,10 @@
+{
+
+"scripts": {
+  "dev": "tailwindcss -i ecom\\public\\static\\tw\\tailwind-input.css -o ecom\\public\\static\\twcss\\output.css -w"
+},
+
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
