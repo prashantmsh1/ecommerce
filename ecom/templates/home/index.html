@@ -26,16 +26,11 @@
 
                                     </a>
                                 </h3>
-                                <p class="mt-1 text-sm text-gray-500">Black</p>
+
                             </div>
-                            <script>
-                                var price = {{ product.price }};
-                                var formattedPrice = price % 1 === 0 ? price.toFixed(0) : price.toFixed(2);
-                            </script>
-                            <p class="text-sm font-medium text-gray-900">₹<span id="formattedPrice"></span></p>
-                            <script>
-                                document.getElementById("formattedPrice").textContent = formattedPrice;
-                            </script>
+
+                            <p class="text-sm font-medium text-gray-900">₹{{product.price}}</p>
+
                         </div>
                     </div>
                     {% endfor %}
@@ -50,5 +45,4 @@
 </section>
 
 
-<h1 class=" text-red-800 text-2xl">This is tailwind</h1>
 {% endblock start %}
